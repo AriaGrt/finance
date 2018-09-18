@@ -1,0 +1,42 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js add express
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Users/ariagroult/Library/Android/sdk/tools:/Users/ariagroult/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.10.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "finance.v2",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "client": "cd client && yarn start",
+      "server": "nodemon server.js",
+      "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/ariagroult/dev/finance.v2/package.json: Unexpected token } in JSON at position 266
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:1036:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:109:13
+      at <anonymous>

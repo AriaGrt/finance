@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  finance-production:
+    build:
+      context: .
+      dockerfile: Dockerfile-prod
+    container_name: finance-production
+    expose:
+      - 5000
+    ports:
+      - 5000:5000
